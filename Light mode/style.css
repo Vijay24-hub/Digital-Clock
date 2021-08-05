@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfe4ea;
+    background-size: 100%;
+}
+
+.container {
+    border: 30px solid #f3f3f3;
+    background: #dddddd;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    font-size: 32px;
+    box-shadow:0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px #fafafa;
+}
+
+input[type="button"] {
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    right: 50px;
+    height: 30px;
+    width: 80px;
+    background-color: #2f3640;
+    color: white;
+    font-family: monospace;
+    font-size: medium;
+    font-weight: 200;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 3px 3px 3px gray;
+}
+
+input[type="button"]:focus {
+    background-color: white;
+    color: #2f3640; 
+}
+
+
+.time-box {
+    color: #272e38;
+    font-size: 1.5em;
+}
+
+.date-box {
+    color: #60a3bc;
+    font-size: 24px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.blink-colon {
+    animation: blink 1s infinite linear;
+}
+@keyframes blink {
+    0%, 100%{
+        opacity: 1;
+    }
+    30% {
+        opacity: 0.4;
+    }
+}
