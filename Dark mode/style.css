@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=BioRhyme+Expanded:wght@300&family=Geostar+Fill&family=Orbitron:wght@500&family=Stint+Ultra+Expanded&display=swap');* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'BioRhyme Expanded', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333333;
+    background-size: 100%;
+    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+    background-size: 100%;
+}
+
+.container {
+    border: 15px solid aqua;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    color: #daf6ff;
+    background: #0000;
+    font-size: 32px;
+}
+
+input[type="button"] {
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    right: 50px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    background: white;
+    color: #2f3640;
+    font-size: medium;
+    font-family: monospace;
+    font-weight: 300;
+    border-color: aqua;
+}
+
+input[type="button"]:focus {
+    background-color: #2f3640;
+    color: white;
+    border: none;
+}
+
+.time-box {
+    font-size: 1.2em;
+    color: aqua; 
+    text-shadow:
+    0 0 5px rgb(0, 0, 240),
+    0 0 10px rgb(0, 240, 0),
+    0 0 15px rgb(0, 240, 0); 
+}
+
+.date-box {
+    margin-top: 6px;
+    font-size: 24px;
+    color: aquamarine;
+    font-family: 'Geostar Fill', cursive;
+    text-align: center;
+}
+
+.blink-colon {
+    animation: blink 1s infinite linear;
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0.4;
+    }
+}
